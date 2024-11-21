@@ -28,10 +28,6 @@ class MainApp extends StatelessWidget {
                 height: 200,
                 color: Colors.red,
               ),
-              Container(
-                height: 200,
-                color: const Color.fromARGB(255, 11, 78, 13),
-              ),
             ],
           ),
         ),
