@@ -18,13 +18,47 @@ class MainApp extends StatelessWidget {
             style: TextStyle(fontSize: 34),
           ),
         ),
-        body: const Column(
-          children: [
-            Text('Item 1'),
-            Text('Item 2'),
-          ],
+        body: const Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text(
+                'Item 1',
+                style: TextStyle(fontSize: 45),
+              ),
+              Text(
+                'Item 2',
+                style: TextStyle(fontSize: 45),
+              ),
+            ],
+          ),
+        ),
+        drawer: const Drawer(),
+        floatingActionButton: const FloatingActionButton(
+          onPressed: null,
+          child: Icon(Icons.notification_add),
+        ),
+        bottomNavigationBar: const BottomAppBar(
+          color: Colors.red,
         ),
       ),
     );
   }
 }
+
+/* BottomNavigationBar(currentIndex: 0, items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: 'Settings',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: 'Search',
+          ),
+        ]),
+*/
