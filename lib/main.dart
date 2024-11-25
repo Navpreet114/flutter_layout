@@ -11,25 +11,18 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Container(
-          height: 800,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                height: 200,
-                color: Colors.orange,
-              ),
-              Container(
-                height: 200,
-                color: Colors.green,
-              ),
-              Container(
-                height: 200,
-                color: Colors.red,
-              ),
-            ],
+        appBar: AppBar(
+          backgroundColor: Colors.red,
+          title: const Text(
+            'Flutter Layout',
+            style: TextStyle(fontSize: 34),
           ),
+        ),
+        body: const Column(
+          children: [
+            Text('Item 1'),
+            Text('Item 2'),
+          ],
         ),
       ),
     );
